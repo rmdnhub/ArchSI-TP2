@@ -9,14 +9,19 @@ import jakarta.persistence.Query;
 import jakarta.ejb.Stateless;
 
 @Stateless
-public class FilmDaoImpl implements FilmDao{
+public class FilmDaoImpl implements FilmDao {
 
     @PersistenceContext(unitName = "tp2")
     private EntityManager em;
 
     @Override
     public void createFilm(FilmBean film) {
-        em.persist(film);
+        // Si l'entité a un ID déjà attribué, utilisez merge pour la mettre à jour
+        if (film.getId() != null && em.find(FilmBean.class, film.getId()) != null) {
+            em.merge(film); // Met à jour l'entité existante
+        } else {
+            em.persist(film); // Persiste une nouvelle entité
+        }
     }
 
     @Override

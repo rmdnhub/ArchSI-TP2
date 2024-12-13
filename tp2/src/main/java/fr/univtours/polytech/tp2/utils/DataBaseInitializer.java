@@ -16,30 +16,30 @@ public class DataBaseInitializer {
 
     @PostConstruct
     public void init() {
-        FilmBean film1 = createFilm(1, "Inception", null);
+        // Ne définissez pas l'ID manuellement, laissez-le null
+        FilmBean film1 = createFilm("Inception", null); // Note initiale = null
         filmBusiness.addFilm(film1);
 
-        FilmBean film2 = createFilm(2, "The Matrix", 4);
+        FilmBean film2 = createFilm("The Matrix", 4);
         filmBusiness.addFilm(film2);
 
-        FilmBean film3 = createFilm(3, "Interstellar", 3);
+        FilmBean film3 = createFilm("Interstellar", 3);
         filmBusiness.addFilm(film3);
 
-        FilmBean film4 = createFilm(4, "The Dark Knight", 5);
+        FilmBean film4 = createFilm("The Dark Knight", 5);
         filmBusiness.addFilm(film4);
     }
 
     /**
      * Helper method to create and populate a FilmBean instance.
      * 
-     * @param id    The unique identifier of the film.
      * @param title The title of the film.
      * @param note  The initial note of the film (can be null).
      * @return A populated FilmBean object.
      */
-    private FilmBean createFilm(Integer id, String title, Integer note) {
+    private FilmBean createFilm(String title, Integer note) {
         FilmBean film = new FilmBean();
-        film.setId(id);
+        // Ne pas définir l'ID manuellement
         film.setTitle(title);
         film.setNote(note);
         return film;
