@@ -54,7 +54,7 @@ pageEncoding="ISO-8859-1" %> <%@ taglib prefix="c" uri="jakarta.tags.core" %>
         <tr>
           <th>ID</th>
           <th>Titre</th>
-          <th>Année</th> <!-- Display year -->
+          <th>Annee</th> <!-- Display year -->
           <th>Acteurs</th> <!-- Display actors -->
           <th>Note</th>
           <th>Poster</th>  <!-- Display poster image -->
