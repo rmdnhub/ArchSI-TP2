@@ -44,8 +44,6 @@
                 <th>ID</th>
                 <th>Titre</th>
                 <th>Note</th>
-                <th>Genre</th>
-                <th>Durée</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -55,8 +53,6 @@
                     <td>${film.id}</td>
                     <td>${film.title}</td>
                     <td>${film.note != null ? film.note : '-'}</td>
-                    <td>${film.genre}</td>
-                    <td>${film.duration} min</td>
                     <td class="actions">
                         <form method="post" action="${pageContext.request.contextPath}/films" style="display:inline;">
                             <input type="hidden" name="filmId" value="${film.id}" />
