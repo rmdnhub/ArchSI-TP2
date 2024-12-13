@@ -21,8 +21,7 @@ pageEncoding="ISO-8859-1" %> <%@ taglib prefix="c" uri="jakarta.tags.core" %>
         margin: 20px auto;
         border-collapse: collapse;
       }
-      th,
-      td {
+      th, td {
         border: 1px solid #ddd;
         padding: 10px;
         text-align: center;
@@ -55,7 +54,10 @@ pageEncoding="ISO-8859-1" %> <%@ taglib prefix="c" uri="jakarta.tags.core" %>
         <tr>
           <th>ID</th>
           <th>Titre</th>
+          <th>Année</th> <!-- Display year -->
+          <th>Acteurs</th> <!-- Display actors -->
           <th>Note</th>
+          <th>Poster</th>  <!-- Display poster image -->
           <th>Actions</th>
         </tr>
       </thead>
@@ -64,23 +66,21 @@ pageEncoding="ISO-8859-1" %> <%@ taglib prefix="c" uri="jakarta.tags.core" %>
           <tr class="filmCliquable">
             <td>${film.id}</td>
             <td>${film.title}</td>
+            <td>${film.year}</td>  <!-- Display year -->
+            <td>${film.actors}</td>  <!-- Display actors -->
             <td>${film.note != null ? film.note : '-'}</td>
+            <td>
+              <img src="${film.imgPoster}" alt="Poster" width="100"/>
+            </td>
+            
             <td class="actions">
-              <form
-                method="post"
-                action="${pageContext.request.contextPath}/films"
-                style="display: inline"
-              >
+              <form method="post" action="${pageContext.request.contextPath}/films" style="display: inline">
                 <input type="hidden" name="filmId" value="${film.id}" />
                 <input type="hidden" name="action" value="decrement" />
                 <button type="submit">-</button>
               </form>
               <span>${film.note != null ? film.note : '-'}</span>
-              <form
-                method="post"
-                action="${pageContext.request.contextPath}/films"
-                style="display: inline"
-              >
+              <form method="post" action="${pageContext.request.contextPath}/films" style="display: inline">
                 <input type="hidden" name="filmId" value="${film.id}" />
                 <input type="hidden" name="action" value="increment" />
                 <button type="submit">+</button>

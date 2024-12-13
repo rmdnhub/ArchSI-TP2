@@ -12,10 +12,16 @@ public class FilmBean {
     private Integer id;
     private String title;
     private Integer note;
+    
+    // New fields for IMDb data
+    private String year;
+    private String actors;
+    private String imgPoster;
 
     public FilmBean() {
         super();
     }
+
     // Getters and Setters
 
     public Integer getId() {
@@ -40,5 +46,31 @@ public class FilmBean {
 
     public void setNote(Integer note) {
         this.note = note;
+    }
+
+    // Getters and Setters for new fields
+    public String getYear() {
+        return year;
+    }
+
+    public void setYear(String year) {
+        this.year = year;
+    }
+
+    public String getActors() {
+        return actors;
+    }
+
+    public void setActors(String actors) {
+        this.actors = actors;
+    }
+
+
+    public String getImgPoster() {
+        return imgPoster;
+    }
+
+    public void setImgPoster(String imgPoster) {
+        this.imgPoster = imgPoster;
     }
 }

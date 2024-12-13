@@ -1,9 +1,15 @@
+/home/hp/Documents/Polytech/S7/Arch SI/ws_archsi/ArchSI-TP2/tp2/src/main/java/fr/univtours/polytech/tp2/business/ImdbBusiness.java
+/home/hp/Documents/Polytech/S7/Arch SI/ws_archsi/ArchSI-TP2/tp2/src/main/java/fr/univtours/polytech/tp2/rest/WebApp.java
 /home/hp/Documents/Polytech/S7/Arch SI/ws_archsi/ArchSI-TP2/tp2/src/main/java/fr/univtours/polytech/tp2/JakartaRestConfiguration.java
 /home/hp/Documents/Polytech/S7/Arch SI/ws_archsi/ArchSI-TP2/tp2/src/main/java/fr/univtours/polytech/tp2/utils/DataBaseInitializer.java
+/home/hp/Documents/Polytech/S7/Arch SI/ws_archsi/ArchSI-TP2/tp2/src/main/java/fr/univtours/polytech/tp2/rest/ImdbRest.java
 /home/hp/Documents/Polytech/S7/Arch SI/ws_archsi/ArchSI-TP2/tp2/src/main/java/fr/univtours/polytech/tp2/business/FilmBusinessImpl.java
 /home/hp/Documents/Polytech/S7/Arch SI/ws_archsi/ArchSI-TP2/tp2/src/main/java/fr/univtours/polytech/tp2/dao/FilmDaoImpl.java
-/home/hp/Documents/Polytech/S7/Arch SI/ws_archsi/ArchSI-TP2/tp2/src/main/java/fr/univtours/polytech/tp2/resources/JakartaEE10Resource.java
-/home/hp/Documents/Polytech/S7/Arch SI/ws_archsi/ArchSI-TP2/tp2/src/main/java/fr/univtours/polytech/tp2/business/FilmBusiness.java
+/home/hp/Documents/Polytech/S7/Arch SI/ws_archsi/ArchSI-TP2/tp2/src/main/java/fr/univtours/polytech/tp2/model/imdb/WsImdb.java
 /home/hp/Documents/Polytech/S7/Arch SI/ws_archsi/ArchSI-TP2/tp2/src/main/java/fr/univtours/polytech/tp2/dao/FilmDao.java
 /home/hp/Documents/Polytech/S7/Arch SI/ws_archsi/ArchSI-TP2/tp2/src/main/java/fr/univtours/polytech/tp2/model/FilmBean.java
+/home/hp/Documents/Polytech/S7/Arch SI/ws_archsi/ArchSI-TP2/tp2/src/main/java/fr/univtours/polytech/tp2/business/WsImdbBusinessImpl.java
+/home/hp/Documents/Polytech/S7/Arch SI/ws_archsi/ArchSI-TP2/tp2/src/main/java/fr/univtours/polytech/tp2/resources/JakartaEE10Resource.java
+/home/hp/Documents/Polytech/S7/Arch SI/ws_archsi/ArchSI-TP2/tp2/src/main/java/fr/univtours/polytech/tp2/model/imdb/Description.java
+/home/hp/Documents/Polytech/S7/Arch SI/ws_archsi/ArchSI-TP2/tp2/src/main/java/fr/univtours/polytech/tp2/business/FilmBusiness.java
 /home/hp/Documents/Polytech/S7/Arch SI/ws_archsi/ArchSI-TP2/tp2/src/main/java/fr/univtours/polytech/tp2/controller/FilmServlet.java
